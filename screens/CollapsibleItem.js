@@ -9,7 +9,7 @@ import {
   Dimensions
 } from 'react-native';
 
-import Collapsible from 'react-native-collapsible';
+import Collapsible from 'react-native-collapsible-updated';
 
 
 

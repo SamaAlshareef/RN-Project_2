@@ -6,9 +6,11 @@
  * @flow strict-local
  */
 import 'react-native-gesture-handler';
-import React from 'react';
+import React, { Component } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import RootScreen from './screens/RootStackScreen';
+
+
 
 const App = ({navigation}) => {
   return (
