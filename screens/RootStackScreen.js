@@ -5,6 +5,9 @@ import SignInScreen from './SignInScreen';
 import SignUpScreen from './SignUpScreen';
 import FPScreen from './FPScreen';
 import FPConfirmationScreen from './FPConfirmationScreen';
+import HomeScreen from './HomeScreen';
+import WalletScreen from './WalletScreen';
+import Collapsible from './CollapsibleItem';
 import { Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native';
@@ -83,6 +86,24 @@ const RootScreen =({navigation})=> (
                   <TouchableOpacity>
                       <Image source={require('../images/hm-menu.png')} style={{height:40, width:40, marginRight:5,}} />
                   </TouchableOpacity> ),}} />
+            <Stack.Screen name="HomeScreen" component={HomeScreen} 
+             options={{
+                headerTitle:'Home',headerTitleAlign:'center',
+                 headerStyle:{backgroundColor:"#f1f8ff", elevation:0},
+                 headerTintColor:"#193870",
+                 headerRight: () => (
+                  <TouchableOpacity>
+                      <Image source={require('../images/hm-menu.png')} style={{height:40, width:40, marginRight:5,}} />
+                  </TouchableOpacity> ),}} />
+            <Stack.Screen name="WalletScreen" component={WalletScreen} 
+              options={{ 
+                        headerTitle:'Wallet',headerTitleAlign:'center',
+                        headerStyle:{backgroundColor:"#f1f8ff", elevation:0},
+                        headerTintColor:"#193870",
+                        headerRight: () => (
+                          <TouchableOpacity>
+                              <Image source={require('../images/hm-menu.png')} style={{height:40, width:40, marginRight:5,}} />
+                          </TouchableOpacity> ),}} />
         </Stack.Navigator>
 );
 export default RootScreen;

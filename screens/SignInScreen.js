@@ -7,17 +7,7 @@ const windowHeight = Dimensions.get('screen').height;
 
 const SignInScreen = ({navigation})=>{
     return(
-        <View style={styles.container}>
-            {/* <View style = {styles.headerContainer}>
-                <Text style={{color:'#193870', fontSize:25, textAlign:'center'}} >Sign in</Text>
-                <View style={styles.hamburgerMenu}>
-                    <TouchableOpacity style={{alignSelf:'flex-end', justifyContent:'flex-end', marginLeft:100}} onPress={()=>{navigation.openDrawer()}}>
-                            <Image source={require('../images/hm-menu.png')} style={{height:40, width:40}} />
-                    </TouchableOpacity> 
-                </View>
-          
-            </View> */}
-          
+        <View style={styles.container}>  
             <View style={styles.loginContainer}>               
                     <TextInput
                         placeholder="Email"
@@ -41,7 +31,7 @@ const SignInScreen = ({navigation})=>{
             </View>
                     <View style={styles.buttonContainer}>
                         <LinearGradient colors={['#7787fc', '#5cb3fb'] }style={{borderRadius:15,elevation:2, height:50, width:250}}>
-                            <TouchableOpacity style={styles.buttonStyle}>
+                            <TouchableOpacity style={styles.buttonStyle} onPress={()=>navigation.navigate('HomeScreen')}>
                                 <Text style={{color:'#fff', textAlign:'center', fontSize:17, fontWeight:'bold'}}>Sign in</Text>
                             </TouchableOpacity>
                         </LinearGradient>
