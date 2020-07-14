@@ -67,8 +67,8 @@ const HomeScreen = ({navigation})=>{
                             <View style={{flexDirection:'row'}}>
                             <Image style={{width:40,height:40, borderRadius:40/2,marginLeft:10, alignItems:'center'}} source={item.image}/>
                                 <View style={{flexDirection:'column',marginLeft:10}}>
-                                    <Text>Aquatics</Text>                  
-                                    <Text style={{fontSize:10, color:'#7c7c7c'}}>{item.title}</Text>
+                                    <Text>{item.title}</Text>                  
+                                    <Text style={{fontSize:10, color:'#7c7c7c'}}>{item.content}</Text>
                                     <View style={{flexDirection:'row'}}>
                                          <Text style={{fontSize:10, color:'#7c7c7c'}}>Deadline </Text>
                                          <Text style={{fontSize:10, color:'#02dbdb'}}>{item.deadline}</Text>
